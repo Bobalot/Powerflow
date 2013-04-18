@@ -1,0 +1,26 @@
+#   Robert Williamson
+#	2012
+
+#	Define line impedances
+z12 n1 n2 0.04 0.14
+z13 n1 n3 0.02 0.11
+z23 n2 n3 0.04 0.3
+
+z24 n2 n4 0.02 0.1
+z34 n3 n4 0.06 0.25
+z35 n3 n5 0.03 0.15
+
+#	Define generator connected to bus 1, ground node 0, V=1.045, P=0.95
+gen1 n1 0 1.045 0.95
+
+#	Define slack connected to bus 3, ground node 0, V=1.0, phase=0.0
+slack1 n3 0 1.0 0.0
+
+#	Define load1 connected to bus 2, ground node 0, P=0.8, Q=0.65
+load1 n2 0 0.8 0.65
+
+#	Define load2 connected to bus 4, ground node 0, P=0.7, Q=0.1
+load2 n4 0 0.7 -0.1
+
+#	Define load3 connected to bus 5, ground node 0, P=0.5, Q=0.075
+load3 n5 0 0.5 0.075
