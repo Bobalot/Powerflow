@@ -1,4 +1,4 @@
 Powerflow
 =========
 
-Iterive calculator for studying power flow problems.
+Iterative calculator for studying power flow problems.
